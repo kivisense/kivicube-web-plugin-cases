@@ -68,18 +68,20 @@ npm run start
 
 ![引导图](./introduce.png)
 
+```bash
+
+  // 注意只对外开放 8000 端口，不要修改端口号
+
+  devServer: {
+    port: 8000,
+  }
+
+```
+
 如果使用 ip 运行本项目，会在控制台会出现警告，如下，需要域名授权请联系官方客服
 
 ```
   Kivicube webPluginByIframe The domain of the hosting page is forbidding
-```
-
-// 注意只对外开放 8000 端口，不要修改端口号
-
-```bash
-  devServer: {
-    port: 8000,
-  }
 ```
 
 #### 体验 AR
