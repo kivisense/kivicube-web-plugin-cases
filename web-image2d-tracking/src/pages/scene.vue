@@ -55,7 +55,7 @@ export default {
         hideDownload: true,
         hideTakePhoto: true,
         hideBackground: true,
-      });
+      }, false);
     },
     ready() {
       this.loading = true;
