@@ -18,10 +18,11 @@
 
 ### 项目运行准备
 
-- 本项目只能在 localhot 运行，如果要发布到线上以及去除水印，请联系我们购买 Kivicube 企业版以及域名授权
+- 本项目只能在 localhost 运行，如果要发布到线上以及去除水印，请联系下方商务微信购买 Kivicube 企业版以及域名授权
 
-- 【商务微信】
-  更多定价详情请查看[定价详情-Web 版 AR 插件接入](https://www.yuque.com/kivicube/manual/kivicube-features#uYqPF)
+![商务微信](./wechat.png)
+
+- 更多定价详情请查看[定价详情-Web 版 AR 插件接入](https://www.yuque.com/kivicube/manual/kivicube-features#uYqPF)
 
 ### 项目运行
 
@@ -90,7 +91,3 @@ npm run start
   ```bash
   Kivicube webPluginByIframe The domain of the hosting page is forbidding
   ```
-
-客服微信
-
-![识别图](./wechat.png)
