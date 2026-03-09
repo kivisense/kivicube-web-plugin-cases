@@ -1,42 +1,44 @@
-### 项目概述
+### Project Overview
 
-本项目是 [Kivicube Web 版 AR 插件](https://www.yuque.com/kivicube/manual/web-ar-plugin-quick-start)的模板案例代码，是 [AR 裸眼插画案例](https://www.yuque.com/kivicube/manual/image-tracking)中【自研 H5 接入 AR】模块的示例代码
+[中文版](./README-CN.md)
 
-在 AR 裸眼插画案例中，开发者可以使用 [Kivicube 小程序 AR 插件](https://www.yuque.com/kivicube/manual/mp-ar-plugin-quick-start)完成微信小程序自定义开发，也可以参考本示例代码完成自研 H5 的自定义开发
+This project is a template case for the [Kivicube Web AR Plugin](https://www.yuque.com/kivicube/manual/web-ar-plugin-quick-start), and serves as the sample code for the **Custom H5 AR Integration** module in the [AR Illustration Tracking Case](https://www.yuque.com/kivicube/manual/image-tracking).
 
-请参阅[自研 H5 接入 AR](https://www.yuque.com/kivicube/manual/image-tracking#BEBke) 查看更多详情
+In the AR Illustration Tracking case, developers can use the [Kivicube Mini Program AR Plugin](https://www.yuque.com/kivicube/manual/mp-ar-plugin-quick-start) for custom WeChat Mini Program development, or refer to this sample code for custom H5 development.
 
-### 体验项目
+Please refer to [Custom H5 AR Integration](https://www.yuque.com/kivicube/manual/image-tracking#BEBke) for more details.
 
-- 体验的 gif
+### Demo
 
-  ![体验](./demo.gif)
+- Demo GIF
 
-- 识别图
+  ![Demo](./demo.gif)
 
-  ![识别图](./scan-marker.jpg)
+- Tracking Marker
 
-### 项目运行准备
+  ![Tracking Marker](./scan-marker.jpg)
 
-- 本项目只能在 localhost 运行，如果要发布到线上以及去除水印，请联系下方商务微信购买 Kivicube 企业版以及域名授权
+### Prerequisites
 
-![商务微信](./wechat.png)
+- This project can only run on localhost. To deploy online or remove the watermark, please contact the business WeChat below to purchase Kivicube Enterprise Edition and domain authorization.
 
-- 更多定价详情请查看[定价详情-Web 版 AR 插件接入](https://www.yuque.com/kivicube/manual/kivicube-features#uYqPF)
+![Business WeChat](./wechat.png)
 
-### 项目运行
+- For more pricing details, please refer to [Pricing - Web AR Plugin Integration](https://www.yuque.com/kivicube/manual/kivicube-features#uYqPF).
 
-#### 运行项目
+### Getting Started
+
+#### Run the Project
 
 ```bash
-# 克隆项目
+# Clone the repository
 git clone git@github.com:kivisense/kivicube-web-plugin-cases.git
 
-# 打开项目
+# Navigate to the project
 cd web-image2d-tracking
 
-# 安装依赖运行
-# 建议node版本12
+# Install dependencies and run
+# Recommended Node.js version: 12
 
 npm install
 npm run start
@@ -45,48 +47,48 @@ npm run start
 #  yarn start
 ```
 
-#### 目录说明
+#### Directory Structure
 
 ```bash
 .
 |
-├── assets                        // 一些素材资源
+├── assets                        // Static resources
 |
-├── components                    // 一些UI组件
+├── components                    // UI components
 │
-├── pages                         // 页面
-│    ├── home                     // 首页
-│    ├── scene                    // kivicube-scene场景页面
+├── pages                         // Pages
+│    ├── home                     // Home page
+│    ├── scene                    // Kivicube scene page
 │
-├── utils                         // 一些工具方法
+├── utils                         // Utility functions
 ```
 
-#### 注意
+#### Notes
 
-- 该项目会使用摄像头，请务必授权
+- This project requires camera access. Please make sure to grant the permission.
 
-- 引入说明
+- Import Instructions
 
-  该插件通过 iframe 的方式使用，需要先引入插件，在 pulic/index.html 中通过 script 标签引入，如下
+  The plugin is used via iframe. You need to import the plugin first by adding a script tag in `public/index.html` as follows:
 
-  ```bash
-    <script src="https://www.kivicube.com/lib/iframe-plugin.js"></script>
+  ```html
+  <script src="https://www.kivicube.com/lib/iframe-plugin.js"></script>
   ```
 
-- 权限
+- Permissions
 
-  该项目目前只允许 <http://localhost:8000> 访问，打开`浏览器开发调试模式`,选择`移动端模式`运行
+  This project currently only allows access from <http://localhost:8000>. Open your browser's **Developer Tools** and switch to **Mobile Device Mode** to run.
 
-  ![引导图](./introduce.png)
+  ![Guide](./introduce.png)
 
   ```bash
-    # 注意只对外开放 8000 端口，不要修改端口号
-    devServer: {
-      port: 8000,
-    }
+  # Note: only port 8000 is open, do not change the port number
+  devServer: {
+    port: 8000,
+  }
   ```
 
-  如果使用 ip 运行本项目，会在控制台会出现警告，如下，需要域名授权请联系官方客服
+  If you run this project using an IP address, a warning will appear in the console as shown below. For domain authorization, please contact the official customer service.
 
   ```bash
   Kivicube webPluginByIframe The domain of the hosting page is forbidding
