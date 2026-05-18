@@ -2,7 +2,7 @@
   <div class="scanning">
     <div class="focus-frame">
       <div class="text">
-        请对准海报识别
+        Scan the poster
       </div>
       <img class="focus-frame-image1" src="@/assets/scan/focus-frame.png" />
       <img class="focus-frame-image2" src="@/assets/scan/id-picture.png" />
@@ -50,6 +50,7 @@
   z-index: -1;
   width: 44vw;
   height: 78.13vw;
+  opacity: 0.5;
 }
 
 .shadow {

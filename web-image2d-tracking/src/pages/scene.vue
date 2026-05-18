@@ -14,7 +14,7 @@
         @lostTrack="lostTrack"
       />
       <scanning class="scan" v-if="scanning" />
-      <button @click="goBackView" class="goBack" v-if="!loading">返回</button>
+      <button @click="goBackView" class="goBack" v-if="!loading">Back</button>
     </div>
     <home @onJumpScene="onJumpScene" v-else />
   </div>
@@ -168,7 +168,6 @@ iframe#kivicube-scene {
   border-radius: 16px;
   padding: 8px 16px;
   color: #fff;
-  letter-spacing: 5px;
   text-align: center;
   background: linear-gradient(to right, #b36afe, #739dfd);
 }

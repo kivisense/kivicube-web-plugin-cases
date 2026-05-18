@@ -1,17 +1,7 @@
 <template>
   <div class="container">
     <div class="content">
-      <div class="text-box">
-        <img class="image" src="@/assets/home/image.png" />
-        <img class="text" src="@/assets/home/text.png" />
-      </div>
-      <div class="button">
-        <span @click="onJumpScene">点击体验AR</span>
-      </div>
-    </div>
-
-    <div class="shadow">
-      <img src="@/assets/home/shadow.png" />
+      <img class="button" src="~@/assets/home/button.png" @click="onJumpScene" alt="">
     </div>
   </div>
 </template>
@@ -74,20 +64,8 @@ export default {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      width: 75vw;
-      height: 24vw;
-      text-align: center;
-
-      background: url("~@/assets/home/button.png?inline") no-repeat center;
-      background-size: cover;
-
-      span {
-        line-height: 5.6vw;
-        font-size: 4vw;
-        color: #fff;
-        letter-spacing: 1px;
-        margin-bottom: 1vw;
-      }
+      width: 50vw;
+      height: auto;
     }
   }
 }
